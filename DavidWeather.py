@@ -7,9 +7,9 @@ import requests
 
 
 lat = "50.727622"
-long = "-3.475646"
+lon = "-3.475646"
 basePath = "http://api.openweathermap.org/data/2.5/weather?"
-path = basePath + "lat=" + lat + "&lon=" + long
+path = basePath + "lat=" + lat + "&lon=" + lon
 
 r = requests.get(path)
 print (r.status_code)
