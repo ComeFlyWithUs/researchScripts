@@ -5,11 +5,11 @@ import requests
 
 #api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}
 
-
+key = ""
 lat = "50.727622"
 lon = "-3.475646"
 basePath = "http://api.openweathermap.org/data/2.5/weather?"
-path = basePath + "lat=" + lat + "&lon=" + lon
+path = basePath + "&key=" + key + "?lat=" + lat + "&lon=" + lon
 
 r = requests.get(path)
 print (r.status_code)
